@@ -1,0 +1,332 @@
+/* GENERAL */
+
+body {
+    overflow-anchor: none;
+    font-family: "GT-Eesti 3r",Arial,sans-serif;
+    font-size: 14px;
+    background-color: #fff;
+    color: #363636;
+    min-width: 960px;
+}
+
+ul {
+  list-style: none;
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+svg {
+  padding: 5px;
+ 
+}
+
+
+li {
+  font-family: "GT-Eesti 2r",Arial,sans-serif;
+  font-weight: 300;
+  line-height: 1.643em;
+  letter-spacing: 0.5px;
+  color: #363636;
+  margin-bottom: 15px;
+}
+
+
+
+/* TopHeader Component */
+
+.brands-shipping-header {
+  background-color: #f8f8f8;
+  height: auto;
+  padding: 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brands-shipping-header-outer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 0 0px;
+  max-width: 1440px;
+  margin: 0 auto;
+  align-items: left;
+}
+
+.brands-shipping-header-outer .brands-list-container{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-evenly;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 35px;
+  margin: 0 0px
+}
+
+#top-link {
+  margin: 0 20px 0 0;
+  color: #363636;
+  font-size: 11.062px;
+  letter-spacing: 0.8px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* SearchHeader Component */
+
+.search-nav-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  padding: 0 20px 10px 20px;
+  flex-wrap: nowrap;
+  max-width: 1440px;
+  margin: 0 auto;
+  align-items: center;
+  text-align: left
+}
+
+.acct-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  min-width: 120px;
+  flex-wrap: nowrap;
+  align-items: center;
+  letter-spacing: 5px;
+  margin: 10px 0px;
+  flex-direction: row;
+  position: relative;
+}
+
+.acct-container-outer {
+  margin: 0 0 0;
+  flex: 1;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 400px;
+  min-width: 120px;
+}
+
+.personal-nav {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  z-index: 2009;
+  flex: 3;
+  
+}
+
+#personal-item {
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  zoom: 1;
+  flex: 1;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  /* -webkit-justify-content: center; */
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  padding: 8px
+}
+
+.personal-label {
+  font-size: 12px;
+  letter-spacing: 0.25px;
+  line-height: 12px;
+  
+}
+
+/* Search Component */
+
+
+.search-container-outer {
+  z-index: 999;
+  position: relative;
+  min-width: 240px;
+  max-width: 400px;
+  display: flex;
+}
+
+.search {
+  
+  display: flex;
+  flex-direction: row;
+}
+
+.fieldset_ {
+  width: 480px;
+}
+
+#search-field {
+  width: 100%;
+  height: 44px;
+  float: left;
+  margin: 0;
+  color: #363636;
+  padding: 6px 45px 6px 45px;
+  cursor: text;
+  font-size: 14px;
+  background: none;
+  font-family: "GT-Eesti 2r",Arial,sans-serif;
+  border: 1px solid #eee;
+  border-bottom: 1px solid #565458;
+  border-radius: 2px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+.search svg {
+  position: absolute;
+  z-index: 999;
+  top: 10px;
+  left: 15px;
+  pointer-events: none;
+  transition: left 0.4s ease 0s;
+}
+
+.search svg:focus {
+  left: calc(100% - 40px)
+}
+
+/* CategoryHeader Component */
+
+#category-nav-container {
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid #d9d9d9;
+  clear: both;
+  height: 41px;
+  padding: 0 0px;
+  box-sizing: border-box;
+}
+
+.category-nav-menu {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  height: 41px;
+  max-width: 1440px;
+  margin-bottom: 0px;
+  padding: 0 0px;
+}
+
+.category-nav-menu .dropdown {
+  letter-spacing: 1px;
+  font-family: "GT-Eesti 5r",Arial,sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: initial;
+  padding: 0 0px;
+  margin-bottom: 0;
+}
+
+.category-nav-menu .dropdown:hover{
+  letter-spacing: 1px;
+  font-family: "GT-Eesti 5r",Arial,sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: initial;
+  padding: 0 10px;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+
+.dropdown .category-nav-columns  {
+  position: absolute;
+  top: 40px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: none;
+  left: 0;
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0,0,0,0.19);
+  -moz-box-shadow: 0 3px 5px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,0.19);
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  padding: 0 0 10px 30px;
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-evenly;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+ }
+
+.dropdown:hover .category-nav-columns {
+  visibility: visible;
+  position: absolute;
+  opacity: 100;
+  display: flex;
+  margin: 0;
+}
+
+.category-nav-columns-group {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-evenly;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  flex: 1;
+  width: calc(100% - 240px);
+  flex-wrap: nowrap;
+}
+
+.column {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 12px;
+  line-height: 1.6em;
+  margin: 8px;
+  text-transform: none;
+  letter-spacing: 1px;
+  text-align: left;
+  
+}
+
+.category-columns-heading {
+  display: block;
+  font-family: "GT-Eesti 5r",Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.6em;
+  margin-bottom: 8px;
+  text-transform: bold;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
