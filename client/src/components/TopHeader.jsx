@@ -2,8 +2,7 @@ import React from 'react';
 
 const TopHeader = () => (
 
-  <div className="brands-shipping-header">
-    <div className="brands-shipping-header-outer">
+  <div className="brands-shipping-container">
       <ul className="brands-list-container">
         <li id="top-link">Pottery Barn</li>
         <li id="top-link">PB Apartment</li>
@@ -14,7 +13,7 @@ const TopHeader = () => (
         <li id="top-link">Rejuvenation</li>
         <li id="top-link">Mark and Graham</li>
       </ul>
-      <ul className="brands-list-container">
+      <ul className="ship-list-container">
         <li id="top-link">
           <svg
             width="14.328px"
@@ -194,7 +193,6 @@ const TopHeader = () => (
         </li>
       </ul>
     </div>
-  </div>
 );
 
 export default TopHeader;

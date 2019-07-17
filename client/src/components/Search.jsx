@@ -1,20 +1,36 @@
 import React from "react";
-import Axios from 'axios';
+import axios from 'axios';
 
 class Search extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      text: '',
       searchResults: []
     };
 
     this.handleChange = this.handleChange.bind(this)
-
+    this.getSearchResults = this.getSearchResults.bind(this)
   }
 
+  getSearchResults() {
+    axios.get('/api')
+        .then((data) => {
+          console.log(data.data)
+            this.setState({
+                searchResults: data.data
+            })
+        })
+        .catch( err => console.error('Could not fetch data', err));
+    }
+  
+
   handleChange(event) {
-    if(event.target.value.length > 3) {
-      
+    this.setState({text: event.target.value})
+    if(event.target.value.length < 3) {
+      this.setState({searchResults: []})
+    } else {
+      this.getSearchResults()
     }
   }
 
@@ -32,7 +48,7 @@ class Search extends React.Component {
               maxLength="100"
               autoCorrect="off"
               autoComplete="on"
-              value={this.state.searchResults}
+              value={this.state.text}
               onChange={this.handleChange}/>
               
             <svg
@@ -76,7 +92,7 @@ class Search extends React.Component {
             </svg>
             <ul>
         {this.state.searchResults.map((results, index) =>
-          <li key={index}>{results}</li>
+          <li key={index}>{index < 3 ? `${this.state.text} in ${results}` : `${results} ${this.state.text}`}</li>
         )}
         </ul>
           </fieldset>
