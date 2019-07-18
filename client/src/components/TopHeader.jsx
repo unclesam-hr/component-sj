@@ -177,7 +177,7 @@ const TopHeader = () => (
             <title>United States of America</title>
             <desc>The flag of United States of America</desc>
             <g
-              class="we-icon__flag-usa-outer"
+              className="we-icon__flag-usa-outer"
               stroke="none"
               stroke-width="1"
               fill="none"

@@ -4,7 +4,7 @@ const CategoryHeader = () => (
   <nav id="category-nav-container">
     <ul className="category-nav-menu">
       <li className="dropdown">
-        <span>FURNITURE</span>
+        <span className="menu-item">FURNITURE</span>
         <div className="category-nav-columns">
           <div className="category-nav-columns-group">
             <div className="column">
@@ -106,7 +106,7 @@ const CategoryHeader = () => (
         </div>
       </li>
       <li className="dropdown">
-        <span>OUTDOOR</span>
+        <span className="menu-item">OUTDOOR</span>
         <div className="category-nav-columns">
           <div className="category-nav-columns-group">
             <div className="column">
@@ -188,7 +188,7 @@ const CategoryHeader = () => (
         </div>
       </li>
       <li className="dropdown">
-        <span>RUGS + WINDOWS</span>
+        <span className="menu-item">RUGS + WINDOWS</span>
         <div className="category-nav-columns">
           <div className="category-nav-columns-group">
             <div className="column">
@@ -250,7 +250,7 @@ const CategoryHeader = () => (
         </div>
       </li>
       <li className="dropdown">
-        <span>BEDDING</span>
+        <span className="menu-item">BEDDING</span>
         <div className="category-nav-columns">
           <div className="category-nav-columns-group">
             <div className="column">
@@ -338,7 +338,7 @@ const CategoryHeader = () => (
         </div>
       </li>
       <li className="dropdown">
-        <span>BATH</span>
+        <span className="menu-item">BATH</span>
         <div className="category-nav-columns">
           <div className="category-nav-columns-group">
             <div className="column">
@@ -399,7 +399,7 @@ const CategoryHeader = () => (
         </div>
       </li>
       <li className="dropdown">
-        <span>LIGHTING</span>
+        <span className="menu-item">LIGHTING</span>
         <div className="category-nav-columns">
           <div className="category-nav-columns-group">
             <div className="column">
@@ -462,7 +462,7 @@ const CategoryHeader = () => (
         </div>
       </li>
       <li className="dropdown">
-        <span>PILLOWS + DECOR</span>
+        <span className="menu-item">PILLOWS + DECOR</span>
         <div className="category-nav-columns">
           <div className="category-nav-columns-group">
             <div className="column">
@@ -548,7 +548,7 @@ const CategoryHeader = () => (
         </div>
       </li>
       <li className="dropdown">
-        <span>WALL ART + MIRRORS</span>
+        <span className="menu-item">WALL ART + MIRRORS</span>
         <div className="category-nav-columns">
           <div className="category-nav-columns-group">
             <div className="column">
@@ -638,7 +638,7 @@ const CategoryHeader = () => (
         </div>
       </li>
       <li className="dropdown">
-        <span>KITCHEN + DINING</span>
+        <span className="menu-item">KITCHEN + DINING</span>
         <div className="category-nav-columns">
           <div className="category-nav-columns-group">
             <div className="column">
@@ -745,7 +745,7 @@ const CategoryHeader = () => (
         </div>
       </li>
       <li className="dropdown">
-        <span>BABY + KIDS</span>
+        <span className="menu-item">BABY + KIDS</span>
         <div className="category-nav-columns">
           <div className="category-nav-columns-group">
             <div className="column">
@@ -807,7 +807,7 @@ const CategoryHeader = () => (
         </div>
       </li>
       <li className="dropdown">
-        <span>GIFTS</span>
+        <span className="menu-item">GIFTS</span>
         <div className="category-nav-columns">
           <div className="category-nav-columns-group">
             <div className="column">
@@ -889,7 +889,7 @@ const CategoryHeader = () => (
         </div>
       </li>
       <li className="dropdown">
-        <span>SALE</span>
+        <span className="menu-item">SALE</span>
       </li>
     </ul>
   </nav>

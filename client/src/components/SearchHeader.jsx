@@ -3,7 +3,7 @@ import Search from './Search.jsx'
 
 const SearchHeader = () => (
   <nav className="search-nav-container">
-   <Search />
+    <Search />
     <div className="logo-container">
       <svg
         width="190px"
@@ -57,11 +57,9 @@ const SearchHeader = () => (
         </g>
       </svg>
     </div>
-    <div className="acct-container-outer">
-      <div className="acct-container">
+    <div>
         <ul className="personal-nav">
-          <li id="personal-item">
-           
+          <li className="personal-item">
             <svg width="26px"
               height="26px"
               viewBox="0 0 26 26"
@@ -100,7 +98,7 @@ const SearchHeader = () => (
             <span className="personal-label">inspiration</span>
             
           </li>
-          <li id="personal-item">
+          <li className="personal-item">
             <svg width="24.8px"
               height="20px"
               viewBox="0 0 22 20"
@@ -116,7 +114,7 @@ const SearchHeader = () => (
             </svg>
             <span className="personal-label">registry</span>
           </li>
-          <li id="personal-item">
+          <li className="personal-item">
             <svg width="17.6px"
               height="20px"
               viewBox="0 0 19 21"
@@ -153,8 +151,8 @@ const SearchHeader = () => (
           </li>
         </ul>
       </div>
-    </div>
   </nav>
 );
+
 
 export default SearchHeader;

@@ -38,19 +38,7 @@ class Search extends React.Component {
     return (
       <div className="search-container-outer">
         <form className="search" >
-          <fieldset >
-            <input
-              type="text"
-              id="search-field"
-              name="words"
-              aria-label="Search"
-              placeholder="What can we help you find?"
-              maxLength="100"
-              autoCorrect="off"
-              autoComplete="on"
-              value={this.state.text}
-              onChange={this.handleChange}/>
-              
+       
             <svg
               width="21px"
               height="20px"
@@ -90,14 +78,23 @@ class Search extends React.Component {
                 </g>
               </g>
             </svg>
-            <ul>
-        {this.state.searchResults.map((results, index) =>
-          <li key={index}>{index < 3 ? `${this.state.text} in ${results}` : `${results} ${this.state.text}`}</li>
-        )}
-        </ul>
-          </fieldset>
+            <input
+              type="text"
+              id="search-field"
+              name="words"
+              aria-label="Search"
+              placeholder="What can we help you find?"
+              maxLength="100"
+              autoCorrect="no"
+              autoComplete="no"
+              value={this.state.text}
+              onChange={this.handleChange}/>
+            <ul className="search-list">     
+              {this.state.searchResults.map((results, index) =>
+                <li key={index}>{index < 3 ? `${this.state.text} in ${results}` : `${results} ${this.state.text}`}</li>
+              )}
+            </ul>
         </form>
-       
       </div>
     );
   }

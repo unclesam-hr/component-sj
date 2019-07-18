@@ -12,21 +12,7 @@ body {
 ul {
   list-style: none;
   list-style-type: none;
-  padding-inline-start: 0px;
-}
-
-svg {
-  padding: 5px;
- 
-}
-
-li {
-  font-family: "GT-Eesti 2r",Arial,sans-serif;
-  font-weight: 300;
-  line-height: 1.643em;
-  letter-spacing: 0.5px;
-  color: #363636;
-  margin-bottom: 15px;
+  
 }
 
 /* TopHeader Component */
@@ -34,122 +20,74 @@ li {
 .brands-shipping-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin: 0 auto;
-  padding: 0 auto;
+  justify-content: space-between;
+  align-content: center;
   max-width: 1440px;
-  
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
 }
 
 .brands-list-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-right: auto;
-
+  padding-inline-start: 0px;
+  height: 35px;
+  margin: 0
 }
 
 .ship-list-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-left: auto
+  margin: 0;
+  height: 35px
 }
 
 #top-link {
-  margin: 0 20px 0 0;
   color: #363636;
   font-size: 11.062px;
   letter-spacing: 0.8px;
-  display: flex;
-  align-items: center;
-}
-
-/* SearchHeader Component */
-
-.search-nav-container {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  padding: 0 20px 10px 20px;
-  flex-wrap: nowrap;
-  max-width: 1440px;
-  margin: 0 auto;
-  align-items: stretch;
-  text-align: left
-}
-
-.acct-container {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-justify-content: center;
   justify-content: center;
-  width: 100%;
-  max-width: 400px;
-  min-width: 120px;
-  flex-wrap: nowrap;
   align-items: center;
-  letter-spacing: 5px;
-  margin: 10px 0px;
+  margin: 0 20px 0 0
+}
+
+#top-link svg {
+  margin-right: 10px;
+  height: 13px;
+}
+
+/* SearchHeader Component */
+
+.search-nav-container {
+  display: flex;
   flex-direction: row;
-  position: relative;
+  justify-content: space-between;
+  max-width: 1440px;
+  align-content: center;
+  padding: 0 20px 0px 20px;
+  margin: 0 auto;
+  height: 60px;
 }
 
-.acct-container-outer {
-  margin: 0 0 0;
-  flex: 1;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: flex-end;
-  justify-content: flex-end;
-  width: 100%;
-  max-width: 400px;
-  min-width: 120px;
-}
 
-.personal-nav {
-  display: flex;
-  justify-content: space-around;
-  position: absolute;
-  z-index: 2009;
-  flex: 3;
-  
-}
-
-#personal-item {
-  margin-bottom: 0;
-  padding-bottom: 5px;
-  zoom: 1;
-  flex: 1;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  /* -webkit-justify-content: center; */
-  justify-content: center;
-  align-items: center;
-  width: 48px;
-  padding: 8px
-}
-
-.personal-label {
-  font-size: 12px;
-  letter-spacing: 0.25px;
-  line-height: 12px;
-  
-}
-
-/* Search Component */
 
 
 .search-container-outer {
+ 
+  flex-direction: row;
+  margin: 0;
+ 
+  align-content: center;
+  height: 44px;
+  width: 400px;
   z-index: 999;
   position: relative;
   min-width: 240px;
@@ -157,20 +95,10 @@ li {
   display: flex;
 }
 
-.search {
-  
-  display: flex;
-  flex-direction: row;
-}
-
-.fieldset_ {
-  width: 480px;
-}
 
 #search-field {
   width: 100%;
-  height: 44px;
-  float: left;
+  height: 30px;
   margin: 0;
   color: #363636;
   padding: 6px 45px 6px 45px;
@@ -178,25 +106,54 @@ li {
   font-size: 14px;
   background: none;
   font-family: "GT-Eesti 2r",Arial,sans-serif;
-  border: 1px solid #eee;
   border-bottom: 1px solid #565458;
   border-radius: 2px;
   letter-spacing: 1px;
   line-height: 1.5;
-  box-sizing: border-box;
 }
 
 .search svg {
   position: absolute;
   z-index: 999;
-  top: 10px;
-  left: 15px;
+  top: 15px;
+  left: 10px;
   pointer-events: none;
-  transition: left 0.4s ease 0s;
+  transition: left 0.4s ease 0s;;
 }
 
-.search svg:focus {
-  left: calc(100% - 40px)
+
+.personal-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin: 0 0;
+  
+}
+
+.personal-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  
+  flex: 1;
+}
+
+.personal-item svg {
+  height: 20px;
+  padding-bottom: 5px;
+}
+
+.personal-item .personal-label {
+  font-size: 12px;
+  letter-spacing: 0.25px;
+  line-height: 12px;
+  text-transform: lowercase;
+}
+
+.we-icon__flag-usa-outer {
+  fill: #363636
 }
 
 /* CategoryHeader Component */
@@ -207,12 +164,13 @@ li {
   clear: both;
   height: 41px;
   padding: 0 0px;
-  box-sizing: border-box;
+  margin: 0 0px;
+
+  
 }
 
 .category-nav-menu {
-  margin-left: auto;
-  margin-right: auto;
+ 
   position: relative;
   z-index: 10;
   display: flex;
@@ -221,8 +179,9 @@ li {
   flex-wrap: nowrap;
   height: 41px;
   max-width: 1440px;
-  margin-bottom: 0px;
+  margin: 0 auto;
   padding: 0 0px;
+  
 }
 
 .category-nav-menu .dropdown {
@@ -240,15 +199,24 @@ li {
   font-family: "GT-Eesti 5r",Arial,sans-serif;
   font-size: 10px;
   font-weight: normal;
-  line-height: initial;
-  padding: 0 10px;
+  line-height: 10px;
   margin-bottom: 0;
-  text-decoration: underline;
+  margin-top: 0px
+}
+
+.menu-item {
+  padding-bottom: 0px;
+  border-bottom: 2px solid transparent;
+  color: #363636;
+  cursor: pointer;
+  line-height: 38px;
+  display: block;
+  white-space: nowrap;
 }
 
 .dropdown .category-nav-columns  {
   position: absolute;
-  top: 40px;
+
   background-color: #fff;
   border: 1px solid #d9d9d9;
   border-top: none;
@@ -264,7 +232,7 @@ li {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
+
   -webkit-justify-content: space-evenly;
   justify-content: space-evenly;
   flex-wrap: nowrap;
@@ -282,13 +250,12 @@ li {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   -webkit-justify-content: space-evenly;
   justify-content: space-evenly;
   box-sizing: border-box;
   flex: 1;
   width: calc(100% - 240px);
-  flex-wrap: nowrap;
 }
 
 .column {
@@ -300,7 +267,6 @@ li {
   text-transform: none;
   letter-spacing: 1px;
   text-align: left;
-  
 }
 
 .category-columns-heading {
@@ -312,4 +278,13 @@ li {
   text-transform: bold;
   letter-spacing: 1px;
   font-weight: bold;
+}
+
+.column li {
+  font-family: "GT-Eesti 2r",Arial,sans-serif;
+  font-weight: 300;
+  line-height: 1.643em;
+  letter-spacing: 0.5px;
+  color: #363636;
+  margin-bottom: 15px;
 }
