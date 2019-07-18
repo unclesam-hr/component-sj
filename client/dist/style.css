@@ -214,6 +214,16 @@ ul {
   white-space: nowrap;
 }
 
+.menu-item-sale {
+  color: #af1a31;
+  cursor: pointer;
+  line-height: 38px;
+  display: block;
+  white-space: nowrap;
+  padding-bottom: 0px;
+  border-bottom: 2px solid transparent;
+}
+
 .dropdown .category-nav-columns  {
   position: absolute;
 
@@ -288,3 +298,28 @@ ul {
   color: #363636;
   margin-bottom: 15px;
 }
+
+.image-text {
+  max-width: 240px;
+  padding-right: 10px;
+  margin: 0 0 10px;
+  font-family: "Sanomat 4r",Georgia,serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 15.75px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #363636;
+  text-transform: capitalize;
+  display: block;
+}
+
+.image-column p {
+  padding-bottom: 0;
+  border-bottom: none;
+  color: #866347;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px
+}
+

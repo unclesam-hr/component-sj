@@ -103,6 +103,15 @@ const CategoryHeader = () => (
               </ul>
             </div>
           </div>
+          <div className="image-column">
+            <img src="https://www.westelm.com/weimgs/ab/images/dp/ecm/201929/1226/001/001.jpg"/>
+            <div>
+              <h5>
+              <span className="image-text">Up To 30% Off Our Best-Selling Urban Collection!</span>
+              </h5>
+              <p>Shop Now ></p>
+            </div>
+          </div>
         </div>
       </li>
       <li className="dropdown">
@@ -185,6 +194,15 @@ const CategoryHeader = () => (
               </ul>
             </div>
           </div>
+          <div className="image-column">
+            <img src="https://www.westelm.com/weimgs/ab/images/dp/ecm/201926/2780/001/001.jpg"/>
+            <div>
+              <h5>
+              <span className="image-text">Warm Weather Lounging: Up To 50% Off Outdoor Furniture</span>
+              </h5>
+              <p>Shop Now ></p>
+            </div>
+          </div>
         </div>
       </li>
       <li className="dropdown">
@@ -245,6 +263,15 @@ const CategoryHeader = () => (
                 <li>30% Off Shag Rugs</li>
                 <li>Clearance</li>
               </ul>
+            </div>
+          </div>
+          <div className="image-column">
+            <img src="https://www.westelm.com/weimgs/ab/images/dp/ecm/201929/0307/001/001.jpg"/>
+            <div>
+              <h5>
+              <span className="image-text">30% Off Solid Rugs That Are Anything But Boring</span>
+              </h5>
+              <p>Shop Now ></p>
             </div>
           </div>
         </div>
@@ -335,6 +362,15 @@ const CategoryHeader = () => (
               </ul>
             </div>
           </div>
+          <div className="image-column">
+            <img src="https://www.westelm.com/weimgs/ab/images/dp/ecm/201929/0308/001/002.jpg"/>
+            <div>
+              <h5>
+              <span className="image-text">Crisp, Cool + Perfect For Summer: 30% Off Belgian Flax Linen</span>
+              </h5>
+              <p>Shop Now ></p>
+            </div>
+          </div>
         </div>
       </li>
       <li className="dropdown">
@@ -394,6 +430,15 @@ const CategoryHeader = () => (
                 <li>Up to 40% Off Bath</li>
                 <li>Clearance</li>
               </ul>
+            </div>
+          </div>
+          <div className="image-column">
+            <img src="https://www.westelm.com/weimgs/ab/images/dp/ecm/201928/2973/001/001.jpg"/>
+            <div>
+              <h5>
+              <span className="image-text">Transform Your Bath (It's ALL 20% Off!)</span>
+              </h5>
+              <p>Shop Now ></p>
             </div>
           </div>
         </div>
@@ -457,6 +502,15 @@ const CategoryHeader = () => (
                 <li>Lighting Under $100</li>
                 <li>Clearance</li>
               </ul>
+            </div>
+          </div>
+          <div className="image-column">
+            <img src="https://www.westelm.com/weimgs/ab/images/dp/ecm/201929/0308/001/001.jpg"/>
+            <div>
+              <h5>
+              <span className="image-text">Brighten Up—Shop 20% Off Lighting</span>
+              </h5>
+              <p>Shop Now ></p>
             </div>
           </div>
         </div>
@@ -543,6 +597,15 @@ const CategoryHeader = () => (
                 <li>25% Off Outdoor Pillows + Cushions</li>
                 <li>Clearance</li>
               </ul>
+            </div>
+          </div>
+          <div className="image-column">
+            <img src="https://www.westelm.com/weimgs/ab/images/dp/ecm/201929/0309/001/001.jpg"/>
+            <div>
+              <h5>
+              <span className="image-text">Toss On Pretty Pillows + Throws (Up To 30% Off)</span>
+              </h5>
+              <p>Shop Now ></p>
             </div>
           </div>
         </div>
@@ -633,6 +696,15 @@ const CategoryHeader = () => (
                 <li>Wall Decor Under $50</li>
                 <li>Clearance</li>
               </ul>
+            </div>
+          </div>
+          <div className="image-column">
+            <img src="https://www.westelm.com/weimgs/ab/images/dp/ecm/201926/1171/001/002.jpg"/>
+            <div>
+              <h5>
+              <span className="image-text">Style + Shine: Up To 40% Off Mirrors!</span>
+              </h5>
+              <p>Shop Now ></p>
             </div>
           </div>
         </div>
@@ -742,6 +814,15 @@ const CategoryHeader = () => (
               </ul>
             </div>
           </div>
+          <div className="image-column">
+            <img src="https://www.westelm.com/weimgs/ab/images/dp/ecm/201928/0422/001/001.jpg"/>
+            <div>
+              <h5>
+              <span className="image-text">Up To 40% Off All Tabletop (AND Free Shipping!)</span>
+              </h5>
+              <p>Shop Now ></p>
+            </div>
+          </div>
         </div>
       </li>
       <li className="dropdown">
@@ -802,6 +883,15 @@ const CategoryHeader = () => (
                 </li>
                 <li>Clearance</li>
               </ul>
+            </div>
+          </div>
+          <div className="image-column">
+            <img src="https://www.westelm.com/weimgs/ab/images/dp/ecm/201924/1016/004/847.jpg"/>
+            <div>
+              <h5>
+              <span className="image-text">Up To 30% Off Baby And Kids Furniture</span>
+              </h5>
+              <p>Shop Now ></p>
             </div>
           </div>
         </div>
@@ -886,10 +976,37 @@ const CategoryHeader = () => (
               </ul>
             </div>
           </div>
+          <div className="image-column">
+            <img src="https://www.westelm.com/weimgs/ab/images/dp/ecm/201924/1016/004/673.jpg"/>
+            <div>
+              <h5>
+              <span className="image-text">Give Them What They Really Want: A Gift Card</span>
+              </h5>
+              <p>Shop Now ></p>
+            </div>
+          </div>
         </div>
       </li>
       <li className="dropdown">
-        <span className="menu-item">SALE</span>
+        <span className="menu-item-sale">SALE</span>
+        <div className="category-nav-columns">
+          <div className="category-nav-columns-group">
+            <div className="column">
+              <ul>
+                <li>
+                  <div className="category-columns-heading">Limited Time Offers</div>
+                </li>
+                <li>Up to 30% Off the Softest Sale</li>
+                <li>20% Off Accent Chairs</li>
+                <li>30% Off Urban Collection</li>
+                <li>30% Off Emmerson Collection</li>
+                <li>25% Off Finishing Touches</li>
+                <li>Up to 50% Off Outdoor Furniture + Décor</li>
+                <li>Shop All Exclusive Savings</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </li>
     </ul>
   </nav>
