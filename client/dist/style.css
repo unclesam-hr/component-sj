@@ -212,6 +212,9 @@ ul {
   line-height: 38px;
   display: block;
   white-space: nowrap;
+ 
+  font-family: "GT-Eesti 5r",Arial,sans-serif;
+  font-size: 10px;
 }
 
 .menu-item-sale {
@@ -222,6 +225,9 @@ ul {
   white-space: nowrap;
   padding-bottom: 0px;
   border-bottom: 2px solid transparent;
+  
+  font-family: "GT-Eesti 5r",Arial,sans-serif;
+  font-size: 10px;
 }
 
 .dropdown .category-nav-columns  {

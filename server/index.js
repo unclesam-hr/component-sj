@@ -1,18 +1,20 @@
 const express = require('express')
 const path = require('path')
 const parser = require('body-parser')
+const cors = require('cors')
 const model = require('../database/index');
 const dbHelpers = require('../database/dbHelpers.js');
 
 
 const app = express()
-const port = 3000;
+const port = 3001;
 
 app.use(parser.json()) // converts to json
 app.use(parser.urlencoded({extended: true}))
 app.use(express.static(path.join(__dirname, '../client/dist')));
 
-app.get("/api", (req, res) => {
+
+app.get("/api/search", cors(), (req, res) => {
 
     Promise.all([dbHelpers.getAllCategories(), dbHelpers.getAllDesc()])
         .then((result) => {
