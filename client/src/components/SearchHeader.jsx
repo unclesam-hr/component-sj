@@ -336,9 +336,7 @@ const SearchHeader = () => (
               cart
             </span>
           </div>
-          <div className="cart-container-outer">
-            <h6 className="cart-container-header">Hi! Looks like your cart's empty...</h6>
-          </div>
+      
         </div>
       </div>
     </div>
