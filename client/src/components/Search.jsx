@@ -14,7 +14,7 @@ class Search extends React.Component {
   }
 
   getSearchResults() {
-    axios.get('/api')
+    axios.get('/api/search')
         .then((data) => {
           console.log(data.data)
             this.setState({
@@ -38,7 +38,6 @@ class Search extends React.Component {
     return (
       <div className="search-container-outer">
         <form className="search" >
-       
             <svg
               width="21px"
               height="20px"

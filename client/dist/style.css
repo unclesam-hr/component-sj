@@ -59,9 +59,34 @@ ul {
   margin: 0 20px 0 0
 }
 
+#top-link-ship {
+  color: #363636;
+  font-size: 11.062px;
+  letter-spacing: 0.8px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px
+}
+
 #top-link svg {
   margin-right: 10px;
   height: 13px;
+}
+
+#top-link-ship .arrow {
+  margin-right: 10px;
+  height: 13px;
+}
+
+.merica {
+  height: 13px;
+  margin-left: 10px;
+  margin-right: 0
 }
 
 /* SearchHeader Component */
@@ -75,24 +100,34 @@ ul {
   padding: 0 20px 0px 20px;
   margin: 0 auto;
   height: 60px;
+  
+}
+
+.logo-container {
+  flex: 1;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: content-box;
 }
 
 
 
 
 .search-container-outer {
- 
+  box-sizing: content-box;
   flex-direction: row;
   margin: 0;
- 
   align-content: center;
   height: 44px;
-  width: 400px;
   z-index: 999;
   position: relative;
-  min-width: 240px;
-  max-width: 400px;
   display: flex;
+  border: none;
+  flex: 1
 }
 
 
@@ -110,6 +145,8 @@ ul {
   border-radius: 2px;
   letter-spacing: 1px;
   line-height: 1.5;
+  min-width: 240px;
+  max-width: 300px;
 }
 
 .search svg {
@@ -121,14 +158,28 @@ ul {
   transition: left 0.4s ease 0s;;
 }
 
+.personal-container {
+  margin: 0 auto 0;
+  flex: 1;
+  box-sizing: content-box;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  align-content: center;
+  height: 44px;
+}
 
 .personal-nav {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-end;
-  margin: 0 0;
-  
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 400px;
+  min-width: 120px;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
+ 
 }
 
 .personal-item {
@@ -151,6 +202,46 @@ ul {
   line-height: 12px;
   text-transform: lowercase;
 }
+
+.cart-outer {
+  color: #fff;
+  z-index: 2010;
+  flex: 1.1;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  padding-bottom: 5px;
+  position: relative;
+  width: 70px;
+  
+}
+
+.shopcart {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background-color: #af1a31;
+  border-radius: 2px;
+  padding-bottom: 8px;
+  flex: 2.0;
+  text-decoration: none;
+  border-bottom: none;
+  cursor: pointer;
+  padding-top: 10px;
+  flex-direction: column; 
+  align-content: center;
+  font-size: 12px;
+  letter-spacing: 0.25px;
+  line-height: 12px;
+  text-transform: lowercase;
+}
+
 
 .we-icon__flag-usa-outer {
   fill: #363636
@@ -272,6 +363,7 @@ ul {
   box-sizing: border-box;
   flex: 1;
   width: calc(100% - 240px);
+  margin-top: 20px;
 }
 
 .column {
@@ -327,5 +419,60 @@ ul {
   text-decoration: none;
   cursor: pointer;
   font-size: 14px
+}
+
+.clearance-list {
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 970px;
+    padding-bottom: 0 !important;
+}
+
+.clearance-item {
+  border-bottom: none !important;
+  display: inline-block;
+  min-width: 90px;
+  max-width: 110px !important;
+  text-align: center;
+  margin-bottom: 40px !important;
+  padding-right: 40px !important;
+
+}
+
+.clearance-image {
+  border-radius: 100px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.clearance-column {
+  box-sizing: border-box;
+  font-size: 12px;
+  line-height: 1.6em;
+  margin: 8px;
+  text-transform: none;
+  letter-spacing: 1px;
+  text-align: left;
+  letter-spacing: 1px;
+  font-family: "GT-Eesti 5r",Arial,sans-serif;
+  font-weight: normal;
+  padding: 0 10px;
+  
+}
+
+.clearance-column li {
+  margin-bottom: 15px;
+  font-size: 12px;
+  line-height: 1.6em;
+  margin: 8px;
+  text-transform: none;
+  letter-spacing: 1px;
+  text-align: left;
+  letter-spacing: 1px;
+  font-family: "GT-Eesti 5r",Arial,sans-serif;
+  font-weight: normal;
 }
 

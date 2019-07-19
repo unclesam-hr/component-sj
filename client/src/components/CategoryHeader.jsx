@@ -104,7 +104,7 @@ const CategoryHeader = () => (
             </div>
           </div>
           <div className="image-column">
-            <img src="https://www.westelm.com/weimgs/ab/images/dp/ecm/201929/1226/001/001.jpg"/>
+            <img src="https://westelm-navbar.s3-us-west-1.amazonaws.com/CategoryImages/furniture.jpg"/>
             <div>
               <h5>
               <span className="image-text">Up To 30% Off Our Best-Selling Urban Collection!</span>
@@ -195,7 +195,7 @@ const CategoryHeader = () => (
             </div>
           </div>
           <div className="image-column">
-            <img src="https://www.westelm.com/weimgs/ab/images/dp/ecm/201926/2780/001/001.jpg"/>
+            <img src="https://westelm-navbar.s3-us-west-1.amazonaws.com/CategoryImages/outdoor.jpg"/>
             <div>
               <h5>
               <span className="image-text">Warm Weather Lounging: Up To 50% Off Outdoor Furniture</span>
@@ -266,7 +266,7 @@ const CategoryHeader = () => (
             </div>
           </div>
           <div className="image-column">
-            <img src="https://www.westelm.com/weimgs/ab/images/dp/ecm/201929/0307/001/001.jpg"/>
+            <img src="https://westelm-navbar.s3-us-west-1.amazonaws.com/CategoryImages/rugs.jpg"/>
             <div>
               <h5>
               <span className="image-text">30% Off Solid Rugs That Are Anything But Boring</span>
@@ -363,7 +363,7 @@ const CategoryHeader = () => (
             </div>
           </div>
           <div className="image-column">
-            <img src="https://www.westelm.com/weimgs/ab/images/dp/ecm/201929/0308/001/002.jpg"/>
+            <img src="https://westelm-navbar.s3-us-west-1.amazonaws.com/CategoryImages/bedding.jpg"/>
             <div>
               <h5>
               <span className="image-text">Crisp, Cool + Perfect For Summer: 30% Off Belgian Flax Linen</span>
@@ -433,7 +433,7 @@ const CategoryHeader = () => (
             </div>
           </div>
           <div className="image-column">
-            <img src="https://www.westelm.com/weimgs/ab/images/dp/ecm/201928/2973/001/001.jpg"/>
+            <img src="https://westelm-navbar.s3-us-west-1.amazonaws.com/CategoryImages/bath.jpg"/>
             <div>
               <h5>
               <span className="image-text">Transform Your Bath (It's ALL 20% Off!)</span>
@@ -505,7 +505,7 @@ const CategoryHeader = () => (
             </div>
           </div>
           <div className="image-column">
-            <img src="https://www.westelm.com/weimgs/ab/images/dp/ecm/201929/0308/001/001.jpg"/>
+            <img src="https://westelm-navbar.s3-us-west-1.amazonaws.com/CategoryImages/lighting.jpg"/>
             <div>
               <h5>
               <span className="image-text">Brighten Up—Shop 20% Off Lighting</span>
@@ -600,7 +600,7 @@ const CategoryHeader = () => (
             </div>
           </div>
           <div className="image-column">
-            <img src="https://www.westelm.com/weimgs/ab/images/dp/ecm/201929/0309/001/001.jpg"/>
+            <img src="https://westelm-navbar.s3-us-west-1.amazonaws.com/CategoryImages/pillows.jpg"/>
             <div>
               <h5>
               <span className="image-text">Toss On Pretty Pillows + Throws (Up To 30% Off)</span>
@@ -699,7 +699,7 @@ const CategoryHeader = () => (
             </div>
           </div>
           <div className="image-column">
-            <img src="https://www.westelm.com/weimgs/ab/images/dp/ecm/201926/1171/001/002.jpg"/>
+            <img src="https://westelm-navbar.s3-us-west-1.amazonaws.com/CategoryImages/mirrors.jpg"/>
             <div>
               <h5>
               <span className="image-text">Style + Shine: Up To 40% Off Mirrors!</span>
@@ -815,7 +815,7 @@ const CategoryHeader = () => (
             </div>
           </div>
           <div className="image-column">
-            <img src="https://www.westelm.com/weimgs/ab/images/dp/ecm/201928/0422/001/001.jpg"/>
+            <img src="https://westelm-navbar.s3-us-west-1.amazonaws.com/CategoryImages/kitchen.jpg"/>
             <div>
               <h5>
               <span className="image-text">Up To 40% Off All Tabletop (AND Free Shipping!)</span>
@@ -886,7 +886,7 @@ const CategoryHeader = () => (
             </div>
           </div>
           <div className="image-column">
-            <img src="https://www.westelm.com/weimgs/ab/images/dp/ecm/201924/1016/004/847.jpg"/>
+            <img src="https://westelm-navbar.s3-us-west-1.amazonaws.com/CategoryImages/baby.jpg"/>
             <div>
               <h5>
               <span className="image-text">Up To 30% Off Baby And Kids Furniture</span>
@@ -977,7 +977,7 @@ const CategoryHeader = () => (
             </div>
           </div>
           <div className="image-column">
-            <img src="https://www.westelm.com/weimgs/ab/images/dp/ecm/201924/1016/004/673.jpg"/>
+            <img src="https://westelm-navbar.s3-us-west-1.amazonaws.com/CategoryImages/gifts.jpg"/>
             <div>
               <h5>
               <span className="image-text">Give Them What They Really Want: A Gift Card</span>
@@ -991,7 +991,7 @@ const CategoryHeader = () => (
         <span className="menu-item-sale">SALE</span>
         <div className="category-nav-columns">
           <div className="category-nav-columns-group">
-            <div className="column">
+            <div className="clearance-column">
               <ul>
                 <li>
                   <div className="category-columns-heading">Limited Time Offers</div>
@@ -1003,6 +1003,55 @@ const CategoryHeader = () => (
                 <li>25% Off Finishing Touches</li>
                 <li>Up to 50% Off Outdoor Furniture + Décor</li>
                 <li>Shop All Exclusive Savings</li>
+              </ul>
+            </div>
+            <div className="clearance-group">
+            <div className="category-columns-heading">Clearance</div>
+              <ul className="clearance-list">
+                <li className="clearance-item">
+                  <img className="clearance-image" src="https://westelm-navbar.s3-us-west-1.amazonaws.com/ClearanceImages/furniture.jpg"/>
+                  <span>Clearance Furniture</span>
+                </li>
+                <li className="clearance-item">
+                  <img className="clearance-image" src="https://westelm-navbar.s3-us-west-1.amazonaws.com/ClearanceImages/rugs.jpg"/>
+                  <span>Clearance Rugs + Windows</span>
+                </li>
+                <li className="clearance-item">
+                  <img className="clearance-image" src="https://westelm-navbar.s3-us-west-1.amazonaws.com/ClearanceImages/bedding.jpg"/>
+                  <span>Clearance Bedding + Bath</span>
+                </li>
+                <li className="clearance-item">
+                  <img className="clearance-image" src="https://westelm-navbar.s3-us-west-1.amazonaws.com/ClearanceImages/outdoor.jpg"/>
+                  <span>Clearance Outdoor</span>
+                </li>
+                <li className="clearance-item">
+                  <img className="clearance-image" src="https://westelm-navbar.s3-us-west-1.amazonaws.com/ClearanceImages/pillows.jpg"/>
+                  <span>Clearance Pillows + Accessories</span>
+                </li>
+                <li className="clearance-item">
+                  <img className="clearance-image" src="https://westelm-navbar.s3-us-west-1.amazonaws.com/ClearanceImages/walldecor.jpg"/>
+                  <span>Clearance Wall Decor + Mirrors</span>
+                </li>
+                <li className="clearance-item">
+                  <img className="clearance-image" src="https://westelm-navbar.s3-us-west-1.amazonaws.com/ClearanceImages/lighting.jpg"/>
+                  <span>Clearance Lighting</span>
+                </li>
+                <li className="clearance-item">
+                  <img className="clearance-image" src="https://westelm-navbar.s3-us-west-1.amazonaws.com/ClearanceImages/kitchen.jpg"/>
+                  <span>Clearance Tabletop + Kitchen</span>
+                </li>
+                <li className="clearance-item">
+                  <img className="clearance-image" src="https://westelm-navbar.s3-us-west-1.amazonaws.com/ClearanceImages/baby.jpg"/>
+                  <span>Clearance Baby + Kids</span>
+                </li>
+                <li className="clearance-item">
+                  <img className="clearance-image" src="https://westelm-navbar.s3-us-west-1.amazonaws.com/ClearanceImages/gift.jpg"/>
+                  <span>Clearance Gifts + Holiday</span>
+                </li>
+                <li className="clearance-item">
+                  <img className="clearance-image" src="https://westelm-navbar.s3-us-west-1.amazonaws.com/ClearanceImages/all.jpg"/>
+                  <span>All Clearance</span>
+                </li>
               </ul>
             </div>
           </div>
