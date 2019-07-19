@@ -34,6 +34,8 @@ class Search extends React.Component {
     }
   }
 
+  
+
   render() {
     return (
       <div className="search-container-outer">
@@ -88,11 +90,15 @@ class Search extends React.Component {
               autoComplete="no"
               value={this.state.text}
               onChange={this.handleChange}/>
-            <ul className="search-list">     
+              {this.state.searchResults.length === 0 ? <span>{null}</span> : <ul className="search-list">     
+              
+              
               {this.state.searchResults.map((results, index) =>
-                <li key={index}>{index < 3 ? `${this.state.text} in ${results}` : `${results} ${this.state.text}`}</li>
+                <li key={index} className="search-list-item">{index < 3 ? `${this.state.text} in ${results}` : `${results} ${this.state.text}`}</li> 
               )}
-            </ul>
+                </ul>
+              }
+           
         </form>
       </div>
     );
