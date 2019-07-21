@@ -1,9 +1,11 @@
 const mongoose = require('mongoose');
 const models = require('./index.js');
 
-mongoose.connection.collections['collectionName'].drop( function(err) {
+mongoose.connection.collections['descriptions','categories','searchobjects'].drop( function(err) {
     console.log('collection dropped');
 });
+
+
 
 
 const categorySeedData = [
@@ -119,7 +121,7 @@ var searchObjects =
 {
 name: 'sofas',
 categories:['Living Room','Sofa & Sectional Collections','Outdoor Furniture','Clearance'],
-descriptions: [ 'garden','baby','kids','accent','urban','outdoor','patio','indoor','patterned','solid','moroccan','persian','natural','white','neutral','gray','blue','purple','pink','abstract','modern','leather','wood','rattan','silk','mid-century','bamboo','wicker','small space','vintage']
+descriptions: ['garden','baby','kids','accent','urban','outdoor','patio','indoor','patterned','solid','moroccan','persian','natural','white','neutral','gray','blue','purple','pink','abstract','modern','leather','wood','rattan','silk','mid-century','bamboo','wicker','small space','vintage']
 },
 {
 name: 'sectionals',
@@ -129,41 +131,41 @@ descriptions: [ 'garden','baby','kids','accent','urban','side','outdoor','patio'
 {
 name: 'loveseats',
 categories:['Living Room','Collections','Outdoor Furniture','Clearance'],
-descriptions: [ 'garden','baby','kids','accent','urban','outdoor','patio','indoor','patterned','solid','moroccan','persian','natural','white','neutral','gray','blue','purple','pink','modern','leather','rattan','silk','mid-century','bamboo','wicker','small space','vintage']
+descriptions: ['garden','baby','kids','accent','urban','outdoor','patio','indoor','patterned','solid','moroccan','persian','natural','white','neutral','gray','blue','purple','pink','modern','leather','rattan','silk','mid-century','bamboo','wicker','small space','vintage']
 },
 {
 name: 'furniture',
-categories: [ 'Living Room','Sofa & Sectional Collections','Dining Room & Kitchen','Kitchen furniture','Bedroom','Home Office','More Rooms','Outdoor Furniture','Kitchen','Brands','Clearance'],
+categories: ['Living Room','Sofa & Sectional Collections','Dining Room & Kitchen','Kitchen furniture','Bedroom','Home Office','More Rooms','Outdoor Furniture','Kitchen','Brands','Clearance'],
 descriptions: ['garden','dining','bar','kitchen','office','baby','kids','accent','urban','outdoor','patio','indoor','entryway','hallway','modern','leather','rattan','mid-century','bamboo','wicker','plastic','small space','vintage']
 },
 {
 name: 'chairs',
-categories: [ 'Living Room','Dining Room & Kitchen','Home Office','More Rooms','Outdoor Furniture'],
+categories: ['Living Room','Dining Room & Kitchen','Home Office','More Rooms','Outdoor Furniture'],
 descriptions: ['garden','dining','bar','counter','kitchen','desk','office','baby','kids','accent','urban','side','outdoor','patio','indoor','neutral','gray','blue','purple','pink','abstract','modern','rattan','mid-century','bamboo','wicker','plastic','vintage']
 },
 {
 name: 'coffee tables',
-categories: [ 'Living Room','More Rooms','Outdoor Furniture','Clearance'],
+categories: ['Living Room','More Rooms','Outdoor Furniture','Clearance'],
 descriptions:  ['glass','garden','urban','side','outdoor','patio','indoor','abstract','modern','rattan','mid-century','bamboo','wicker','plastic','metal','small space','vintage']
 },
 {
 name: 'side tables',
-categories: [ 'Living Room','More Rooms','Outdoor Furniture','Clearance'],
+categories: ['Living Room','More Rooms','Outdoor Furniture','Clearance'],
 descriptions:  ['glass','garden','urban','side','outdoor','patio','indoor','abstract','modern','rattan','mid-century','bamboo','wicker','plastic','metal','small space','vintage']
 },
 {
 name: 'tables',
-categories: [ 'Living Room','Dining Room & Kitchen','Kitchen Furniture','Home Fffice','Outdoor Furniture','Clearance'],
+categories: ['Living Room','Dining Room & Kitchen','Kitchen Furniture','Home Office','Outdoor Furniture','Clearance'],
 descriptions:  ['glass','garden','dining room','bar','counter','kitchen','office','accent','urban','side','outdoor','patio','indoor','rattan','silk','mid-century','bamboo','wicker','plastic','small space','vintage','coffee','side','console']
 },
 {
 name: 'bar stools',
-categories:[ 'Living Room','Dining room & Kitchen','Kitchen Furniture','Outdoor Furniture','Bar & Glassware'],
+categories:['Living Room','Dining room & Kitchen','Kitchen Furniture','Outdoor Furniture','Bar & Glassware'],
 descriptions:  ['urban','outdoor','patio','indoor','abstract','modern','leather','wood','rattan','mid-century','bamboo','wicker','plastic','metal','vintage']
 },
 {
 name: 'bar carts',
-categories:[ 'Living Room','Dining room & Kitchen','Kitchen Furniture','Outdoor Furniture','Bar & Glassware'],
+categories:['Living Room','Dining room & Kitchen','Kitchen Furniture','Outdoor Furniture','Bar & Glassware'],
 descriptions: ['glass','urban','outdoor','patio','indoor','abstract','modern','leather','wood','rattan','mid-century','bamboo','wicker','plastic','metal','vintage']
 },
 {
@@ -213,7 +215,7 @@ const seedDescFunction = () => {
 }
 
 const seedSearchObjFunction = () => {
-    models.Description.create(searchObjects)
+    models.SearchObj.create(searchObjects)
     .then( () => {
         console.log('Database seeded!');
         mongoose.connection.close();
