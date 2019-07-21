@@ -9,7 +9,12 @@ const getAllDesc = () => {
     return model.Description.find({})
 }
 
+const getAllObjs = () => {
+    return model.SearchObj.find({})
+}
+
 module.exports = {
     getAllCategories,
-    getAllDesc
+    getAllDesc,
+    getAllObjs
 }
