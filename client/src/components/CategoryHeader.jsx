@@ -324,7 +324,7 @@ const CategoryHeader = () =>
                     <li>Duvet Inserts + Mattress Toppers</li>
                     <li>Bedskirts</li>
                     <li>Mattresses + Foundations</li>
-                    <li>All Bedding Essentials</li>>
+                    <li>All Bedding Essentials</li>
                   </ul>
                 </div>
                 <div className="column">
