@@ -13,10 +13,10 @@ class Search extends React.Component {
     this.getSearchResults = this.getSearchResults.bind(this)
   }
 
-  getSearchResults() {
-    axios.get('/api/search')
+  getSearchResults(text) {
+    axios.post('/api/search', {text: text})
         .then((data) => {
-          console.log(data.data)
+          
             this.setState({
                 searchResults: data.data
             })
@@ -30,7 +30,7 @@ class Search extends React.Component {
     if(event.target.value.length < 3) {
       this.setState({searchResults: []})
     } else {
-      this.getSearchResults()
+      this.getSearchResults(event.target.value)
     }
   }
 
@@ -38,8 +38,9 @@ class Search extends React.Component {
 
   render() {
     return (
-      <div className="search-container-outer">
-        <form className="search" >
+      <div className="search-box-container">
+       <div className="search">
+        <form  >
             <svg
               width="21px"
               height="20px"
@@ -94,12 +95,13 @@ class Search extends React.Component {
               
               
               {this.state.searchResults.map((results, index) =>
-                <li key={index} className="search-list-item">{index < 3 ? `${this.state.text} in ${results}` : `${results} ${this.state.text}`}</li> 
+                <li key={index} className="search-list-item">{results}</li> 
               )}
                 </ul>
               }
            
         </form>
+      </div>
       </div>
     );
   }
