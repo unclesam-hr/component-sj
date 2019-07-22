@@ -2,6 +2,7 @@ import React from 'react';
 import SearchHeader from './SearchHeader.jsx';
 import TopHeader from './TopHeader.jsx';
 import CategoryHeader from './CategoryHeader.jsx';
+import PromoHeader from './PromoHeader.jsx'
 
 class App extends React.Component {
   constructor(props) {
@@ -29,6 +30,7 @@ class App extends React.Component {
         <TopHeader />
         <SearchHeader />
         <CategoryHeader />
+        <PromoHeader />
       </div>
     );
   }
