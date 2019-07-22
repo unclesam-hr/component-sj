@@ -21,7 +21,7 @@ app.post("/api/search", cors(), (req, res) => {
         .then((results) => {
             var categories = results[0]
             var descriptions = results[1]
-            var searchObjs = results[2]
+            var searchObjs = results[2] 
             var searchWord = req.body.text
             
             var createSearchResults = function(word) {
