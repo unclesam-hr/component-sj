@@ -280,9 +280,10 @@ const SearchHeader = () => (
             </div>
           </li>
         </ul>
-        <div className="cart-outer">
-          <div className="shopcart">
-            <span className="shopcart-content">
+        <div className="cart-container">
+          <div className="cart-outer">
+            <div className="cart-content">
+            <a className="shopcart">
               <svg
                 viewBox="0 0 25 24"
                 role="img"
@@ -338,9 +339,17 @@ const SearchHeader = () => (
                 </g>
               </svg>
               cart
-            </span>
+            </a>
+            <div className="cart-popout">
+              <h6 className="popout-header">Hi! Looks like your cart's empty...</h6>
+              <button className="cart-signin">sign-in</button>
+              <p>to sync your cart.</p>
+              <p>You'll see the same thing whether you're shopping on your phone, tablet or computer.</p>
+             </div>
           </div>
-      
+          </div>
+     
+          
         </div>
       </div>
     </div>
