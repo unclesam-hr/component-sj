@@ -165,7 +165,7 @@ ul {
 }
 
 .search {
-  z-index: 999;
+  z-index: 3;
   position: relative;
   min-width: 240px;
   max-width: 400px;
@@ -193,7 +193,7 @@ ul {
 
 .search svg {
   position: absolute;
-  z-index: 999;
+  z-index: 3;
   top: 10px;
   left: 15px;
   pointer-events: none;
@@ -214,10 +214,16 @@ ul {
   top: 30px;
 }
 
+
+
 .search-list-item {
   margin-top: 20px;
   margin-bottom: 35px;
   margin-left: 10px
+}
+
+.search-list-item:hover {
+  background-color: #949393
 }
 
 .personal-container-outer {
@@ -405,7 +411,7 @@ ul {
 .category-nav-menu {
  
   position: relative;
-  z-index: 10;
+  z-index: 2;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -562,6 +568,13 @@ ul {
   color: #363636;
   margin-bottom: 15px;
 }
+
+.column li:hover {
+
+  color: #866347;
+}
+
+
 
 .image-text {
   max-width: 240px;
