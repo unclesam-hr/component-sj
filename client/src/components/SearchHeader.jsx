@@ -1,10 +1,13 @@
 import React from "react";
 import Search from "./Search.jsx";
 
+
+
 const SearchHeader = () => (
   <nav className="search-nav-container">
     <Search />
     <div className="logo-container">
+      <div className="logo-box">
       <svg
         width="190px"
         height="34px"
@@ -56,6 +59,7 @@ const SearchHeader = () => (
           </g>
         </g>
       </svg>
+      </div>
     </div>
     <div className="personal-container-outer">
       <div className="personal-container">
