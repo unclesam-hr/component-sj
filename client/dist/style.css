@@ -273,7 +273,8 @@ ul {
   flex-wrap: wrap;
   align-items: center;
   flex: 1;
-  padding-bottom: 5px
+  padding-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 .personal-item svg {
