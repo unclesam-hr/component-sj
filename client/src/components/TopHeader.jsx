@@ -21,6 +21,7 @@ class TopHeader extends React.Component {
   render() {
     return (
       <div className="brands-shipping-container">
+        <div className="brands-shipping-outer">
         <ul className="brands-list-container">
           <li id="top-link">Pottery Barn</li>
           <li id="top-link">PB Apartment</li>
@@ -34,27 +35,23 @@ class TopHeader extends React.Component {
         <ul className="ship-list-container">
           <li id="top-link">
             <svg
-              width="14.328px"
-              height="15px"
               viewBox="0 0 22 23"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
               xlink="http://www.w3.org/1999/xlink"
             >
               <title>Track Your Order</title>
-              <desc>Click to track your order.</desc>
               <defs />
               <g
-                class="we-icon__track-your-order-outer"
                 stroke="none"
                 stroke-width="1"
-                fill="none"
+                fill="currentColor"
                 fill-rule="evenodd"
               >
                 <g
                   class="we-icon we-icon__track-your-order"
                   transform="translate(-29.000000, -861.000000)"
-                  fill="#363636"
+                  fill="currentColor"
                 >
                   <g transform="translate(0.000000, 54.000000)">
                     <g transform="translate(0.000000, 793.000000)">
@@ -210,7 +207,10 @@ class TopHeader extends React.Component {
             </svg>
           </li>
         </ul>
-        {this.state.modalOpened === true ? <ShipModal closeModal={this.closeModal}/> : null}
+        {this.state.modalOpened === true ? (
+          <ShipModal closeModal={this.closeModal} />
+        ) : null}
+        </div>
       </div>
     );
   }
