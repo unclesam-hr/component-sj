@@ -25,6 +25,10 @@ ul {
   min-width: 960px;
 }
 
+li {
+  margin-bottom: 0px
+}
+
 /* TopHeader Component */
 
 .brands-shipping-container {
