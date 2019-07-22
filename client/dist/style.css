@@ -2,7 +2,7 @@
 
 #header {
   min-width: 960px;
-  padding: 0 10px
+  width: 100%
 }
 /* GENERAL */
 
@@ -28,16 +28,22 @@ ul {
 /* TopHeader Component */
 
 .brands-shipping-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: center;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: #f8f8f8;
   margin-bottom: 16px;
-  min-width: 960px;
 }
+
+.brands-shipping-outer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 0 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 
 .brands-list-container {
   display: flex;
@@ -70,7 +76,13 @@ ul {
   -webkit-justify-content: center;
   justify-content: center;
   align-items: center;
-  margin: 0 20px 0 0
+  margin: 0 20px 0 0;
+  border-bottom: 1px solid transparent;
+}
+
+#top-link:hover {
+  color: #866347;
+  border-bottom: 1px solid #866347;
 }
 
 #top-link-ship {
@@ -84,13 +96,24 @@ ul {
   -webkit-justify-content: center;
   justify-content: center;
   align-items: center;
-  margin-left: 10px
+  margin-left: 10px;
+  border-bottom: 1px solid transparent;
+}
+
+#top-link-ship:hover {
+  border-bottom: 1px solid #866347;
+  color: #866347;
 }
 
 #top-link svg {
   margin-right: 10px;
   height: 13px;
 }
+
+#top-link svg:hover {
+  color: #866347
+}
+
 
 #top-link-ship .arrow {
   margin-right: 10px;
@@ -106,15 +129,17 @@ ul {
 /* SearchHeader Component */
 
 .search-nav-container {
+  display: -webkit-flex;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  padding: 0 20px 10px 20px;
+  flex-wrap: nowrap;
   max-width: 1440px;
-  align-content: center;
-  padding: 0 20px 0px 20px;
   margin: 0 auto;
-  height: 60px;
-  min-width: 960px;
+  align-items: center;
 }
 
 .logo-container {
@@ -128,63 +153,65 @@ ul {
 
 }
 
-
-
-
-.search-container-outer {
-  border: none;
-  flex-direction: row;
-  margin: 0;
-  align-content: center;
-  height: 44px;
-  z-index: 999;
-  position: relative;
-  display: flex;
-  border: none;
-  flex: 1;
-  width: 100%
+.logo-box {
+  padding-bottom: 0;
+    border-bottom: none;
+    text-align: center;
 }
 
+
+.search-box-container {
+  flex: 1;
+}
 
 .search {
-  outline: none;
-  appearance: none;
+  z-index: 999;
+  position: relative;
+  min-width: 240px;
+  max-width: 400px;
 }
+
 
 #search-field {
   width: 100%;
-  height: 30px;
+  height: 44px;
+  float: left;
   margin: 0;
-  
+  color: #363636;
   padding: 6px 45px 6px 45px;
   cursor: text;
   font-size: 14px;
   background: none;
   font-family: "GT-Eesti 2r",Arial,sans-serif;
-  outline: none;
+  border: 1px solid #eee;
+  border-bottom: 1px solid #565458;
+  border-radius: 2px;
   letter-spacing: 1px;
   line-height: 1.5;
-  min-width: 240px;
-  max-width: 300px;
-  appearance: none;
+  box-sizing: border-box;
 }
 
 .search svg {
   position: absolute;
   z-index: 999;
-  top: 15px;
-  left: 10px;
+  top: 10px;
+  left: 15px;
   pointer-events: none;
-  transition: left 0.4s ease 0s;;
+  transition: left 0.4s ease 0s;
+}
+
+.search:focus svg {
+  left: calc(100% - 40px);
+  pointer-events: auto;
 }
 
 .search .search-list {
   background: #fff none;
   border-top: 1px solid ;
   box-shadow: 0 3px 9px rgba(0,0,0,0.3);
-  width: 82%;
+  width: 100%;
   position: absolute;
-  
+  top: 30px;
 }
 
 .search-list-item {
@@ -244,6 +271,18 @@ ul {
   height: 20px;
   padding-bottom: 5px;
 }
+
+.personal-item:hover {
+  color: #866347
+}
+
+.personal-item svg:hover {
+  height: 20px;
+  padding-bottom: 5px;
+  color: #866347
+}
+
+
 
 .personal-item .personal-label {
   font-size: 12px;
@@ -386,6 +425,7 @@ ul {
   line-height: initial;
   padding: 0 0px;
   margin-bottom: 0;
+  border-bottom: 2px solid transparent;
 }
 
 .category-nav-menu .dropdown:hover{
@@ -395,7 +435,9 @@ ul {
   font-weight: normal;
   line-height: 10px;
   margin-bottom: 0;
-  margin-top: 0px
+  margin-top: 0px;
+  border-bottom: 2px solid #866347;
+
 }
 
 .menu-item {
@@ -406,10 +448,15 @@ ul {
   line-height: 38px;
   display: block;
   white-space: nowrap;
- 
+  font-weight: 600; 
   font-family: "GT-Eesti 5r",Arial,sans-serif;
   font-size: 10px;
 }
+
+.dropdown:hover .menu-item {
+  color: #866347;
+}
+
 
 .menu-item-sale {
   color: #af1a31;
@@ -419,7 +466,7 @@ ul {
   white-space: nowrap;
   padding-bottom: 0px;
   border-bottom: 2px solid transparent;
-  
+  font-weight: 600;
   font-family: "GT-Eesti 5r",Arial,sans-serif;
   font-size: 10px;
 }
@@ -435,7 +482,6 @@ ul {
   -moz-box-shadow: 0 3px 5px 0 rgba(0,0,0,0.19);
   box-shadow: 0 3px 5px 0 rgba(0,0,0,0.19);
   visibility: hidden;
-  opacity: 0;
   width: 100%;
   padding: 0 0 10px 30px;
   box-sizing: border-box;
@@ -451,9 +497,26 @@ ul {
 .dropdown:hover .category-nav-columns {
   visibility: visible;
   position: absolute;
-  opacity: 100;
-  display: flex;
   margin: 0;
+  position: absolute;
+  top: 42px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: none;
+  left: 0;
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0,0,0,0.19);
+  -moz-box-shadow: 0 3px 5px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,0.19);
+  width: 100%;
+  padding: 0 0 10px 30px;
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+
+  -webkit-justify-content: space-evenly;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
 }
 
 .category-nav-columns-group {
@@ -518,7 +581,6 @@ ul {
 .image-column p {
   padding-bottom: 0;
   border-bottom: none;
-  color: #866347;
   text-decoration: none;
   cursor: pointer;
   font-size: 14px
@@ -629,18 +691,19 @@ ul {
   
   color: #363636;
   text-decoration: none;
-  border-bottom: 1px solid #fff;
+ 
   font-family: "GT-Eesti 2r",Arial,sans-serif;
   font-weight: 300;
   font-size: 10px;
   line-height: 1.643em;
   letter-spacing: 0.5px;
   text-align: justify;
-  margin-bottom: 5px
+  margin-bottom: 5px;
+  border: 1px solid transparent
 }
 
 .country-item:hover {
-  border: 1px solid rgb(37, 37, 236)
+  border: 1px solid #035c80
 }
 
 
@@ -785,5 +848,37 @@ ul {
 #x-button {
   float: right;
   font-size: 40px;
-  color: #949393
+  color: #949393;
+  cursor: pointer;
+}
+
+/* PromoHeader */
+
+.promo-header {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.promo-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 4px 0;
+  background: #f8f8f8;
+}
+
+.promo-banner {
+  display: flex;
+  justify-content: space-around;
+  padding: 6px 0;
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.promo-text {
+  text-align: center;
+  margin: 0px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #af1a31;
+  font-family: "GT-Eesti 4r",Arial,sans-serif;
 }
