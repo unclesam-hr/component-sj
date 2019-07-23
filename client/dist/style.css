@@ -199,8 +199,7 @@ ul {
   z-index: 3;
   top: 10px;
   left: 15px;
-  pointer-events: none;
-  transition: left 0.4s ease 0s;
+ 
 }
 
 .search:focus svg {
@@ -214,7 +213,7 @@ ul {
   box-shadow: 0 3px 9px rgba(0,0,0,0.3);
   width: 100%;
   position: absolute;
-  top: 30px;
+  top: 43px;
 }
 
 
@@ -225,9 +224,7 @@ ul {
   margin-left: 10px
 }
 
-.search-list-item:hover {
-  background-color: #949393
-}
+
 
 .personal-container-outer {
   margin: 0 auto 0;
@@ -664,8 +661,6 @@ ul {
 }
 
 .clearance-list {
-  display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
