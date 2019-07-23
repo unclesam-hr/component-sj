@@ -258,7 +258,7 @@ ul {
   -webkit-justify-content: space-around;
   justify-content: space-around;
   position: relative;
-  z-index: 2009;
+  z-index: 4;
   flex: 3;
   flex-wrap: nowrap;
   align-items: center;

@@ -16,8 +16,8 @@ describe('Search Component', () => {
 
     it('should respond store text entered into search input', () => {
         const wrapper = shallow(<Search />);
-        wrapper.find('#search-field').simulate('change', {target: {value: 'chair'}});
-        expect(wrapper.state('text')).toEqual('chair');
+        wrapper.find('#search-field').simulate('change', {target: {value: 'ch'}});
+        expect(wrapper.state('text')).toEqual('ch');
     })
     it('it should not have search list visible', () => {
         const wrapper = shallow(<Search />);
