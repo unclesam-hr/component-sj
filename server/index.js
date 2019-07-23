@@ -3,7 +3,7 @@ const path = require('path')
 const parser = require('body-parser')
 const cors = require('cors')
 const model = require('../database/index');
-const dbHelpers = require('../database/dbHelpers.js');
+const dbHelpers = require('../database/dbhelpers');
 
 
 const app = express()
