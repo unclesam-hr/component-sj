@@ -2,8 +2,8 @@ const express = require('express')
 const path = require('path')
 const parser = require('body-parser')
 const cors = require('cors')
-const model = require('../database/index');
 const dbHelpers = require('../database/dbhelpers');
+const model = require('../database/index');
 
 
 const app = express()
@@ -22,7 +22,7 @@ app.post("/api/search", cors(), (req, res) => {
             var categories = results[0]
             var descriptions = results[1]
             var searchObjs = results[2] 
-            var searchWord = req.body.text
+            var searchWord = req.body.text.toLowerCase()
             
             var createSearchResults = function(word) {
                 var results = [];
